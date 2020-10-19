@@ -9,41 +9,52 @@
 <body>
   <div class="grid-container">
     <div class="menu">
-      <img id="picture" src="https://dummyimage.com/300x300/000/fff.png" alt="picture" width="300px" height="300px">
-      <div>
-        <input id="urlPicture" type="text" placeholder="Type Your Image URL" />
-        <button id="changePicture" type="button">Change Picture</button>
-      </div>
+      <h1>Resume Form</h1>
+      
+      <h2>Contact information:</h2>
+      <section class="contact">
+        <label for="firstNameInput">First Name:</label>
+        <input id="firstNameInput" type="text" placeholder="Type your First Name here" /><br>
+        <label>Last Name: </label>
+        <input id="lastNameInput" type="text" placeholder="Type your Last Name here" /><br>
+        <label>Phone Number: </label>
+        <input id="phoneNumberInput" type="text" placeholder="Type your phoneNumber here" /><br>
+        <label>Email: </label>
+        <input id="emailInput" type="email" placeholder="Type your email here" /><br>
+      </section>
+
+      <h2>Personal information:</h2>
+      <section class="personal">
+        <label>Age: </label>
+        <input id="ageInput" type="number" placeholder="Put Your Age" /><br>
+        <label>Birthday: </label>
+        <input id="birthdayInput" type="date" placeholder="Put Your Age" /><br>
+        <label>Picture: </label>
+        <input id="urlPictureInput" type="text" placeholder="Type Your Image URL" /><br><br>
+        <button id="submit" class="button" type="button">Submit</button>
+      </section>
+
       <h2>My Skills</h2>
-      <div>
+      <section class="skills">
         <input id="skillValue" type="text" placeholder="Type Skill to add" />
-        <button id="addSkill" type="button">Add Skill</button>
-        <ul id="skillList">
-        </ul>
-      </div>
+        <button id="addSkill" class="button" type="button" style="float: right;">Add</button>
+      </section>
     </div>
-    <div class="main">
-      <div class="name">
-        <h1>My name is : </h1><h1 id="name"></h1>     
-      </div>
-      <input id="myname" type="text" placeholder="Type your name here" />
-      <button id="addName" type="button">Add</button>
+    
+    
+    <div class="main" hidden="true">
+      <img id="picture" src="" alt="picture" width="200px" height="200px" hidden="true">
+      <h2 id="name"></h2>
+      <h2 id="phoneNumber"></h2>
+      <h2 id="email"></h2>
 
-      <div class="title">
-        <h2>I am : </h2><h2 id="title"></h2>     
-      </div>
-      <input id="myTitle" type="text" placeholder="Type your title here" />
-      <button id="addTitle" type="button">Add</button>
-
-      <div class="desc">
-      <p id="desc"> Your discription</p>     
-      </div>
-      <input id="myDesc" type="text" placeholder="Type your description here" />
-      <button id="addDesc" type="button">Add</button>
-
+      <h2 id="age"></h2>
+      <h2 id="birthday"></h2>
+      <ul id="skillList">
+      </ul>
     </div>
   </div>
-<script src="main.js"></script> 
+  <script src="main.js"></script>
 </body>
 
 </html>

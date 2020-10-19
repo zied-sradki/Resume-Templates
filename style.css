@@ -1,29 +1,35 @@
-.menu{grid-area: menu;}
-.main{grid-area:main;}
-.footer{grid-area:footer;}
 .menu{
     grid-area: menu;
     background-color:greenyellow;
+    padding: 10px;
 }
+
 .main {
     grid-area: main;
     background-color:#FFF;
-    }
+}
+
 .grid-container {
     display:grid;
     grid-template-areas: 
         'menu main';
-    grid-template-columns: 300px auto;
-    grid-gap: 100px;
+    grid-template-columns: 400px auto;
+    grid-gap: 10px;
     background-color: #333333;
     padding: 10px;
 }
 
-.name h1 {
-    display: inline-block;
+input{
+    width: 250px;
+    background-color: transparent;
+    border: none;
 }
 
-.title h2 {
-    display: inline-block;
-}
-    
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px;
+  }

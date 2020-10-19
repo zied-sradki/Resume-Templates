@@ -1,11 +1,27 @@
-$("#changePicture").on("click", function (e) {
-    var urlVal = $("#urlPicture").val();
-    if (urlVal !== "") {
-        $("#picture").attr('src', urlVal);
-    } else {
-        alert("Please fill in all the inputs!");
-    }
+$("#submit").on("click", function (e) {
+    e.preventDefault();
+    var firstName = $("#firstNameInput").val();
+    var lastName = $("#lastNameInput").val();
+    var phoneNumber = $("#phoneNumberInput").val();
+    var email = $("#emailInput").val();
+
+    var age = $("#ageInput").val();
+    var birthday = $("#birthdayInput").val();
+    var picture = $("#urlPictureInput").val();
+
+        $(".main").show();
+        $("#name").text(firstName+" "+lastName);
+        $("#phoneNumber").text(phoneNumber);
+        $("#email").text(email);
+        $("#age").text(age);
+        $("#birthday").text(birthday);
+        $("#picture").attr('src', picture);
+        $("#picture").show();
+
+
 });
+
+
 
 
 $("#addSkill").on("click", function (e) {
@@ -14,6 +30,7 @@ $("#addSkill").on("click", function (e) {
     var list = $("#skillList");
     var item = $("<li class='skillItem' style='display:none'>" + skillValue + "</li>");
     if (skillValue !== "" ) {
+    $(".main").show();
       list.append(item);
       $(".skillItem").fadeIn(1500);
 
@@ -23,31 +40,3 @@ $("#addSkill").on("click", function (e) {
   });
 
 
-
-$("#addName").on("click", function (e) {
-    var mynameVal = $("#myname").val();
-    if (mynameVal !== "") {
-        $("#name").text(mynameVal);
-    } else {
-        alert("Please fill in all the inputs!");
-    }
-});
-
-
-$("#addTitle").on("click", function (e) {
-    var mynameVal = $("#myTitle").val();
-    if (mynameVal !== "") {
-        $("#title").text(mynameVal);
-    } else {
-        alert("Please fill in all the inputs!");
-    }
-});
-
-$("#addDesc").on("click", function (e) {
-    var mynameVal = $("#myDesc").val();
-    if (mynameVal !== "") {
-        $("#desc").text(mynameVal);
-    } else {
-        alert("Please fill in all the inputs!");
-    }
-});
