@@ -9,41 +9,21 @@
     grid-area: main;
     background-color:#FFF;
     }
+.grid-container {
+    display:grid;
+    grid-template-areas: 
+        'menu main';
+    grid-template-columns: 300px auto;
+    grid-gap: 100px;
+    background-color: #333333;
+    padding: 10px;
+}
 
-    .footer{
-        grid-area: footer;
-        background-color: coral;
-        font-size: 30px ;
-    }
+.name h1 {
+    display: inline-block;
+}
 
-    .grid-container {
-        display:grid;
-        grid-template-areas: 
-        'menu main main main main main'
-        'menu footer footer footer footer footer';
-        grid-template-columns: 300px auto;
-        grid-gap: 100px;
-        background-color: #25db34;
-        padding: 10px;
-    }
-    .grid-container{
-        text-align: center;
-        font-size: 30px;
-        padding: 10px;
-    }
-    .your{
-        color: ivory;
-        text-align: left;
-        border: solid gray;
-        text-transform: uppercase;
-        color: #4CAF50;
-    }
-    #name{
-        color: ivory;
-        text-align: center;
-        border:  solid rgb(216, 195, 195);
-        text-transform: uppercase;
-        color: #fff;
-    }
-
-    }
+.title h2 {
+    display: inline-block;
+}
+    
