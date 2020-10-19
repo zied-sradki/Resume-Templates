@@ -32,4 +32,24 @@ input{
     padding: 5px 15px;
     text-align: center;
     font-size: 12px;
+}
+
+
+.column {
+    float: left;
+    padding: 10px;
+  }
+  
+.column.side {
+    width: 25%;
+  }
+  
+.column.main {
+    width: 70%;
+  }
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
   }

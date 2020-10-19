@@ -4,12 +4,10 @@ $("#submit").on("click", function (e) {
     var lastName = $("#lastNameInput").val();
     var phoneNumber = $("#phoneNumberInput").val();
     var email = $("#emailInput").val();
-
     var age = $("#ageInput").val();
     var birthday = $("#birthdayInput").val();
     var picture = $("#urlPictureInput").val();
-
-        $(".main").show();
+    //if (firstName !== "" && lastName !== "" && phoneNumber !== "" && email !== "" && age !== "" && birthday !== ""&& picture !== "") {
         $("#name").text(firstName+" "+lastName);
         $("#phoneNumber").text(phoneNumber);
         $("#email").text(email);
@@ -17,7 +15,10 @@ $("#submit").on("click", function (e) {
         $("#birthday").text(birthday);
         $("#picture").attr('src', picture);
         $("#picture").show();
+   // } else {
+   //     alert("Please fill all informations");
 
+   // }
 
 });
 
@@ -28,14 +29,11 @@ $("#addSkill").on("click", function (e) {
     e.preventDefault();
     var skillValue = $("#skillValue").val();
     var list = $("#skillList");
-    var item = $("<li class='skillItem' style='display:none'>" + skillValue + "</li>");
+    var item = $("<li class='skillItem'>" + skillValue + "</li>");
     if (skillValue !== "" ) {
-    $(".main").show();
       list.append(item);
-      $(".skillItem").fadeIn(1500);
-
     } else {
-        alert("Please fill in all the inputs!");
+        alert("Please put a skill!");
     }
   });
 

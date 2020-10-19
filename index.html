@@ -13,7 +13,7 @@
       
       <h2>Contact information:</h2>
       <section class="contact">
-        <label for="firstNameInput">First Name:</label>
+        <label>First Name:</label>
         <input id="firstNameInput" type="text" placeholder="Type your First Name here" /><br>
         <label>Last Name: </label>
         <input id="lastNameInput" type="text" placeholder="Type your Last Name here" /><br>
@@ -42,16 +42,29 @@
     </div>
     
     
-    <div class="main" hidden="true">
-      <img id="picture" src="" alt="picture" width="200px" height="200px" hidden="true">
-      <h2 id="name"></h2>
-      <h2 id="phoneNumber"></h2>
-      <h2 id="email"></h2>
+    <div class="main">
+      <div class="row">
+        <div class="column">
+          <h1 id="name"></h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column side">
+          <img id="picture" src="" alt="picture" width="200px" height="200px" hidden="true">
+        </div>
+        
+        <div class="column main">
+          <h2 id="phoneNumber"></h2>
+          <h2 id="email"></h2>
+        </div>
+        
+      </div>
+
 
       <h2 id="age"></h2>
       <h2 id="birthday"></h2>
-      <ul id="skillList">
-      </ul>
+      <ul id="skillList"></ul>
     </div>
   </div>
   <script src="main.js"></script>
