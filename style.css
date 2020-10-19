@@ -1,4 +1,6 @@
-
+.menu{grid-area: menu;}
+.main{grid-area:main;}
+.footer{grid-area:footer;}
 .menu{
     grid-area: menu;
     background-color:greenyellow;
@@ -11,15 +13,28 @@
     .footer{
         grid-area: footer;
         background-color: coral;
+        font-size: 30px ;
     }
 
     .grid-container {
         display:grid;
         grid-template-areas: 
-        'menu main '
-        'menu footer';
+        'menu main main main main main'
+        'menu footer footer footer footer footer';
         grid-template-columns: 300px auto;
-        grid-gap: 10px;
-        background-color: #111;
-        padding: 10px;
+        grid-gap: 100px;
+        background-color: #25db34;
+        padding: 0px;
+    }
+    .grid-container{
+        text-align: center;
+        font-size: 30px;
+        padding: 0px;
+    }
+    .your{
+        color: ivory;
+        text-align: left;
+        border: 1px solid gray;
+        text-transform: uppercase;
+        color: #4CAF50;
     }
