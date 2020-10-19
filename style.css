@@ -7,7 +7,7 @@
 }
 .main {
     grid-area: main;
-    background-color:red;
+    background-color:#FFF;
     }
 
     .footer{
@@ -24,17 +24,26 @@
         grid-template-columns: 300px auto;
         grid-gap: 100px;
         background-color: #25db34;
-        padding: 0px;
+        padding: 10px;
     }
     .grid-container{
         text-align: center;
         font-size: 30px;
-        padding: 0px;
+        padding: 10px;
     }
     .your{
         color: ivory;
         text-align: left;
-        border: 1px solid gray;
+        border: solid gray;
         text-transform: uppercase;
         color: #4CAF50;
+    }
+    #name{
+        color: ivory;
+        text-align: center;
+        border:  solid rgb(216, 195, 195);
+        text-transform: uppercase;
+        color: #fff;
+    }
+
     }
