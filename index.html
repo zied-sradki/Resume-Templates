@@ -21,6 +21,8 @@
         <input id="phoneNumberInput" type="text" placeholder="Type your phoneNumber here" /><br>
         <label>Email: </label>
         <input id="emailInput" type="email" placeholder="Type your email here" /><br>
+        <label>Adresse: </label>
+        <input id="adresseInput" type="text" placeholder="Type your adresse here" /><br>
       </section>
 
       <h2>Personal information:</h2>
@@ -48,23 +50,33 @@
           <h1 id="name"></h1>
         </div>
       </div>
-
       <div class="row">
         <div class="column side">
           <img id="picture" src="" alt="picture" width="200px" height="200px" hidden="true">
-        </div>
-        
+        </div>        
         <div class="column main">
-          <h2 id="phoneNumber"></h2>
-          <h2 id="email"></h2>
+          <h2 id="contact" hidden>Contact information</h2>
+          <h3 id="phoneNumber"></h3>
+          <h3 id="email"></h3>
+          <h3 id="adresse"></h3>
+        </div> 
+      </div>
+      <div class="row">
+        <div class="column">
+          <h2 id="personal" hidden>Personal information</h2>
+          <h3 id="age"></h3>
+          <h3 id="birthday"></h3>
         </div>
-        
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <h2 id="skills" hidden>Skills</h2>
+          <ul id="skillList"></ul>
+        </div>
       </div>
 
 
-      <h2 id="age"></h2>
-      <h2 id="birthday"></h2>
-      <ul id="skillList"></ul>
     </div>
   </div>
   <script src="main.js"></script>
