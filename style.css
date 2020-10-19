@@ -1,0 +1,25 @@
+
+.menu{
+    grid-area: menu;
+    background-color:greenyellow;
+}
+.main {
+    grid-area: main;
+    background-color:red;
+    }
+
+    .footer{
+        grid-area: footer;
+        background-color: coral;
+    }
+
+    .grid-container {
+        display:grid;
+        grid-template-areas: 
+        'menu main '
+        'menu footer';
+        grid-template-columns: 300px auto;
+        grid-gap: 10px;
+        background-color: #111;
+        padding: 10px;
+    }
