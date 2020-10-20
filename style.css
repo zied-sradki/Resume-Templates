@@ -1,5 +1,5 @@
 body{
-    background-color:#F0FFCE;  
+    background-image: url("pexels-karolina-grabowska-4226805.jpg");
 }
 h1 {
     color: #4C230A;
@@ -14,7 +14,7 @@ h2{
 
 .main {
     grid-area: main;
-    background-color: #CCC9A1;
+    background-color: #fff;
 }
 
 .grid-container {
